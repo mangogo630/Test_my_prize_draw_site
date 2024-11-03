@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>獎項管理後台</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>獎項管理後台</h1>
+
+    <h2>剩餘獎項</h2>
+    <ul id="remaining-prizes"></ul>
+
+    <h2>抽取紀錄</h2>
+    <div id="history-container" style="height: 200px; overflow-y: scroll;">
+        <ul id="draw-history"></ul>
+    </div>
+
+    <h2>調整獎項數量</h2>
+    <!--<form id="update-form">
+        <label for="prize-id">獎項ID：</label>
+        <input type="number" id="prize-id" name="prize_id" required>
+        <br><br>
+        <label for="new-quantity">新數量：</label>
+        <input type="number" id="new-quantity" name="new_quantity" required>
+        <br><br>
+        <button type="submit">更新獎項數量</button>
+    </form>-->
+    <form id="update-form">
+        <label for="prize-id">選擇獎項：</label>
+        <select id="prize-id" name="prize_id" required>
+            <!-- 選項將由 JavaScript 動態生成 -->
+        </select>
+        <br><br>
+        <label for="new-quantity">新數量：</label>
+        <input type="number" id="new-quantity" name="new_quantity" required>
+        <br><br>
+        <button type="submit">更新獎項數量</button>
+    </form>
+
+    <script src="/static/admin.js"></script>
+</body>
+</html>

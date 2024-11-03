@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff7e0; /* 橘黃色背景 */
+    color: #333;
+}
+
+h1, h2 {
+    color: #ff9800; /* 橘黃色標題 */
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff9800; /* 橘黃色按鈕 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e68900; /* 濃一點的橘色 */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #ffcc80; /* 獎項清單的分隔線 */
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #e67e22; /* 獲獎提示顏色 */
+}
+
+#draw-history {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+#draw-history li {
+    padding: 5px;
+    background-color: #fff3e0; /* 更淺的橘黃色區塊 */
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.result{
+margin-top: 20px;
+}
