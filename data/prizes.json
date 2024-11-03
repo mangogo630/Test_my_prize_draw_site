@@ -1,3 +1,8 @@
-[{"prize_id": 1, "name": "A 獎", "quantity": 1, "probability": 1}, 
-{"prize_id": 2, "name": "B 獎", "quantity": 4, "probability": 30},
- {"prize_id": 3, "name": "C 獎", "quantity": 10, "probability": 69}]
+[
+    {"prize_id": 1, "name": "A 獎 客製小燈箱", "quantity": 2, "probability": 1}, 
+    {"prize_id": 2, "name": "B 獎 盒玩款水壺", "quantity": 2, "probability": 5},
+    {"prize_id": 3, "name": "C 獎 盒玩款壓克力吊飾", "quantity": 50, "probability": 10},
+    {"prize_id": 4, "name": "D 獎 盒玩款L夾", "quantity": 10, "probability": 15},
+    {"prize_id": 5, "name": "E 獎 盒玩貼紙組-10款隨機", "quantity": 50, "probability": 29},
+    {"prize_id": 6, "name": "F 獎 盒玩款明信片組-3張一組", "quantity": 50, "probability": 40}
+]

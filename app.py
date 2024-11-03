@@ -86,9 +86,12 @@ def update_prize():
 @app.route('/reset', methods=['POST'])
 def reset_prizes():
     initial_prizes = [
-        { "prize_id": 1, "name": "A 獎", "quantity": 1 },
-        { "prize_id": 2, "name": "B 獎", "quantity": 2 },
-        { "prize_id": 3, "name": "C 獎", "quantity": 3 }
+    {"prize_id": 1, "name": "A 獎 客製小燈箱", "quantity": 2, "probability": 1}, 
+    {"prize_id": 2, "name": "B 獎 盒玩款水壺", "quantity": 2, "probability": 5},
+    {"prize_id": 3, "name": "C 獎 盒玩款壓克力吊飾", "quantity": 50, "probability": 10},
+    {"prize_id": 4, "name": "D 獎 盒玩款L夾", "quantity": 10, "probability": 15},
+    {"prize_id": 5, "name": "E 獎 盒玩貼紙組-10款隨機", "quantity": 50, "probability": 29},
+    {"prize_id": 6, "name": "F 獎 盒玩款明信片組-3張一組", "quantity": 50, "probability": 40}
     ]
     save_prizes(initial_prizes)
     return jsonify({"message": "獎品已重設！"})
