@@ -53,6 +53,6 @@ function drawPrize() {
 window.onload = function() {
     loadRemainingPrizes();
     loadDrawHistory();
-    setInterval(loadRemainingPrizes, 2500);  // 每5秒更新剩餘獎項
-    setInterval(loadDrawHistory, 2500);      // 每5秒更新抽獎紀錄
+    setInterval(loadRemainingPrizes, 5000);  // 每5秒更新剩餘獎項
+    setInterval(loadDrawHistory, 5000);      // 每5秒更新抽獎紀錄
 };

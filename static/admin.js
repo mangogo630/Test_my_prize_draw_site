@@ -79,8 +79,8 @@ window.onload = function() {
     loadPrizeOptions();      // 加載獎項選單
     loadRemainingPrizes();   // 加載剩餘獎項
     loadDrawHistory();       // 加載抽取紀錄
-    setInterval(loadRemainingPrizes, 2500);
-    setInterval(loadDrawHistory, 2500);  // 每5秒刷新一次
+    setInterval(loadRemainingPrizes, 5000);
+    setInterval(loadDrawHistory, 5000);  // 每5秒刷新一次
 };
 
 
