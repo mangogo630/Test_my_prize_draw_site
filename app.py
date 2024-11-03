@@ -51,14 +51,22 @@ def admin():
 def draw_prize():
     prizes = load_prizes()
     available_prizes = [prize for prize in prizes if prize["quantity"] > 0]
+
     if not available_prizes:
         return jsonify({"message": "抱歉，所有獎品已抽完！"}), 400
 
-    selected_prize = random.choice(available_prizes)
+    # 設定每個獎品的權重（以剩餘數量為基礎）
+    weights = [prize["quantity"] for prize in available_prizes]
+
+    # 根據權重選擇獎品
+    selected_prize = random.choices(available_prizes, weights=weights, k=1)[0]
     selected_prize["quantity"] -= 1
+
     save_prizes(prizes)
-    save_draw_history(selected_prize["name"])  # 保存抽取紀錄
+    save_draw_history(selected_prize["name"])
+
     return jsonify({"prize": selected_prize})
+
 
 # 取得獎項資料
 @app.route('/prizes')
@@ -86,12 +94,18 @@ def update_prize():
 @app.route('/reset', methods=['POST'])
 def reset_prizes():
     initial_prizes = [
-    {"prize_id": 1, "name": "A 獎 客製小燈箱", "quantity": 2, "probability": 1}, 
-    {"prize_id": 2, "name": "B 獎 盒玩款水壺", "quantity": 2, "probability": 5},
-    {"prize_id": 3, "name": "C 獎 盒玩款壓克力吊飾", "quantity": 50, "probability": 10},
-    {"prize_id": 4, "name": "D 獎 盒玩款L夾", "quantity": 10, "probability": 15},
-    {"prize_id": 5, "name": "E 獎 盒玩貼紙組-10款隨機", "quantity": 50, "probability": 29},
-    {"prize_id": 6, "name": "F 獎 盒玩款明信片組-3張一組", "quantity": 50, "probability": 40}
+    {"prize_id": 1, "name": "A 獎 客製小燈箱", "quantity": 2}, 
+    {"prize_id": 2, "name": "B 獎 盒玩款水壺", "quantity": 2},
+    {"prize_id": 3, "name": "C 獎 搖搖樂吊飾", "quantity": 10},
+    {"prize_id": 4, "name": "D 獎 阿狼款壓克力吊飾", "quantity": 10},
+    {"prize_id": 5, "name": "D 獎 栩栩熊款壓克力吊飾", "quantity": 10},
+    {"prize_id": 6, "name": "D 獎 狼狽為奸款壓克力吊飾", "quantity": 10},
+    {"prize_id": 7, "name": "D 獎 狐狸音款壓克力吊飾", "quantity": 10},
+    {"prize_id": 8, "name": "D 獎 貓抓老鼠款壓克力吊飾", "quantity": 10},
+    {"prize_id": 9, "name": "D 獎 盒玩款壓克力吊飾", "quantity": 10},
+    {"prize_id": 10, "name": "D 獎 盒玩款L夾", "quantity": 20},
+    {"prize_id": 11, "name": "E 獎 盒玩貼紙組-10款隨機", "quantity": 50},
+    {"prize_id": 12, "name": "F 獎 盒玩款明信片組-3張一組", "quantity": 50}
     ]
     save_prizes(initial_prizes)
     return jsonify({"message": "獎品已重設！"})

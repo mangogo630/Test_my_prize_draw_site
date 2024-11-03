@@ -1,8 +1,14 @@
 [
-    {"prize_id": 1, "name": "A 獎 客製小燈箱", "quantity": 2, "probability": 0.01}, 
-    {"prize_id": 2, "name": "B 獎 盒玩款水壺", "quantity": 2, "probability": 0.1},
-    {"prize_id": 3, "name": "C 獎 盒玩款壓克力吊飾", "quantity": 50, "probability": 10},
-    {"prize_id": 4, "name": "D 獎 盒玩款L夾", "quantity": 10, "probability": 15},
-    {"prize_id": 5, "name": "E 獎 盒玩貼紙組-10款隨機", "quantity": 50, "probability": 34},
-    {"prize_id": 6, "name": "F 獎 盒玩款明信片組-3張一組", "quantity": 50, "probability": 40.89}
+    {"prize_id": 1, "name": "A 獎 客製小燈箱", "quantity": 2}, 
+    {"prize_id": 2, "name": "B 獎 盒玩款水壺", "quantity": 2},
+    {"prize_id": 3, "name": "C 獎 搖搖樂吊飾", "quantity": 10},
+    {"prize_id": 4, "name": "D 獎 阿狼款壓克力吊飾", "quantity": 10},
+    {"prize_id": 5, "name": "D 獎 栩栩熊款壓克力吊飾", "quantity": 10},
+    {"prize_id": 6, "name": "D 獎 狼狽為奸款壓克力吊飾", "quantity": 10},
+    {"prize_id": 7, "name": "D 獎 狐狸音款壓克力吊飾", "quantity": 10},
+    {"prize_id": 8, "name": "D 獎 貓抓老鼠款壓克力吊飾", "quantity": 10},
+    {"prize_id": 9, "name": "D 獎 盒玩款壓克力吊飾", "quantity": 10},
+    {"prize_id": 10, "name": "D 獎 盒玩款L夾", "quantity": 20},
+    {"prize_id": 11, "name": "E 獎 盒玩貼紙組-10款隨機", "quantity": 50},
+    {"prize_id": 12, "name": "F 獎 盒玩款明信片組-3張一組", "quantity": 50}
 ]
