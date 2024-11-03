@@ -80,7 +80,7 @@ window.onload = function() {
     loadRemainingPrizes();   // 加載剩餘獎項
     loadDrawHistory();       // 加載抽取紀錄
     setInterval(loadRemainingPrizes, 30000);
-    setInterval(loadDrawHistory, 30000);  // 每5秒刷新一次
+    setInterval(loadDrawHistory, 30000 );  // 每5秒刷新一次
 };
 
 
