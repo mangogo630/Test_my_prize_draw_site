@@ -1,16 +1,16 @@
 [
     {"prize_id": 1, "name": "A 獎 客製小燈箱", "quantity": 1}, 
     {"prize_id": 2, "name": "B 獎 盒玩款水壺", "quantity": 1},
-    {"prize_id": 3, "name": "C 獎 龍款圓形冰箱磁鐵", "quantity": 4},
+    {"prize_id": 3, "name": "C 獎 龍款圓形冰箱磁鐵", "quantity": 3},
     {"prize_id": 3, "name": "C 獎 天使款圓形冰箱磁鐵", "quantity": 5},
-    {"prize_id": 3, "name": "C 獎 魔女款圓形冰箱磁鐵", "quantity": 5},
-    {"prize_id": 3, "name": "C 獎 賭徒款圓形冰箱磁鐵", "quantity": 5},
+    {"prize_id": 3, "name": "C 獎 魔女款圓形冰箱磁鐵", "quantity": 3},
+    {"prize_id": 3, "name": "C 獎 賭徒款圓形冰箱磁鐵", "quantity": 4},
     {"prize_id": 4, "name": "D 獎 阿狼款壓克力吊飾", "quantity": 3},
     {"prize_id": 5, "name": "D 獎 栩栩熊款壓克力吊飾", "quantity": 4},
-    {"prize_id": 6, "name": "D 獎 狼狽為奸款壓克力吊飾", "quantity": 5},
+    {"prize_id": 6, "name": "D 獎 狼狽為奸款壓克力吊飾", "quantity": 3},
     {"prize_id": 7, "name": "D 獎 狐狸音款壓克力吊飾", "quantity": 3},
     {"prize_id": 8, "name": "D 獎 貓抓老鼠款壓克力吊飾", "quantity": 4},
     {"prize_id": 10, "name": "E 獎 盒玩款L夾", "quantity": 8},
-    {"prize_id": 11, "name": "F 獎 盒玩貼紙組-6款一組", "quantity": 11},
+    {"prize_id": 11, "name": "F 獎 盒玩貼紙組-6款一組", "quantity": 10},
     {"prize_id": 12, "name": "G 獎 盒玩款明信片組-3張一組", "quantity": 8}
-]
+] 
